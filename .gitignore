@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+Cms.Data/obj/*
+Cms.Data/bin/*
+Cms.Web/obj/*
+Cms.Web/bin/*
+Cms.Web/Properties/PublishProfiles/*
+Cms.Web/node_modules/*
+Cms.Web/Web.Live.config
+packages/*
+.vs/*
