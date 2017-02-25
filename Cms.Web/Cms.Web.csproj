@@ -352,6 +352,7 @@
     <Content Include="Views\GdriveAdmin\Edit.cshtml" />
     <Content Include="Views\GdriveAdmin\Index.cshtml" />
     <None Include="Properties\PublishProfiles\cms.guruin.net - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\cms.shreevenkat.co.uk - Web Deploy.pubxml" />
     <None Include="Web.Live.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
