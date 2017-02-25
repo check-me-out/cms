@@ -1,0 +1,29 @@
+[
+  {
+    "outputFileName": "Content/css/site.min.css",
+    "inputFiles": [
+      "Content/css/site.css",
+      "Content/packages/font-awesome/font-awesome.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/js/site.min.js",
+    "inputFiles": [
+      "Content/js/site.js",
+      "Content/js/code-styler.js",
+      "Content/js/utils.js",
+      "Content/js/blog-layout.js",
+      "Content/js/Cms.Api.js",
+      "Content/js/Cms.VM.js",
+      "Content/js/Cms.Controller.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/bundles/third-party-libs.min.js",
+    "inputFiles": [
+      "Content/packages/jquery-validation/dist/jquery.validate.js",
+      "Content/packages/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Content/packages/knockout/dist/knockout.js"
+    ]
+  }
+]

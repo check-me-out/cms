@@ -1,0 +1,36 @@
+﻿@if (Request.IsAuthenticated)
+{
+    <form id="logoutForm" action="@Url.Action("LogOff", "Account")" method="post" class="navbar-right">
+        @Html.AntiForgeryToken()
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"> @* hover*@
+                <a href="javascript:void(0);" class="dropdown-toggle navbar-highlight" data-toggle="dropdown">@User.Identity.Name <b class="caret"></b></a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+
+                    <li><a href="@Url.Action("Index", "BlogAdmin")" class="navbar-normal">Manage Blog</a></li>
+                    <li><a href="@Url.Action("Index", "GdriveAdmin")" class="navbar-normal">Manage GDrive</a></li>
+                    <li role="separator" class="divider navbar-normal"></li>
+                    <li><a id="loginLink" href="@Url.Action("Index", "Manage")" title="Manage" class="navbar-normal">Manage Account</a></li>
+                    <li role="separator" class="divider navbar-normal"></li>
+                    <li><a href="javascript:document.getElementById('logoutForm').submit()" class="navbar-normal">Log out</a></li>
+
+                </ul>
+        </li>
+    </ul>
+</form>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">@* hover*@
+            <a href="javascript:void(0);" class="dropdown-toggle navbar-highlight" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage <span class="caret"></span></a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+
+                <li><a id="loginLink" href="@Url.Action("Login", "Account")" class="navbar-normal">Log in</a></li>
+                <li><a id="registerLink" href="@Url.Action("Register", "Account")" class="navbar-normal">Register</a></li>
+
+            </ul>
+        </li>
+    </ul>
+}
