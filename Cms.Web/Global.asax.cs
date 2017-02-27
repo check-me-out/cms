@@ -20,7 +20,6 @@ namespace Cms.Web
 
             // lazy load DI.
             var logger = ModuleLoader.Dependencies.Get<ILog>("CmsLogger");
-            EmailEngine.Logger(logger);
 
             var diResolver = new DependencyResolver(ModuleLoader.Dependencies);
             System.Web.Mvc.DependencyResolver.SetResolver(diResolver); // MVC
