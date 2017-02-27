@@ -17,7 +17,7 @@ namespace Cms.Web.Controllers
 
         public async Task<ActionResult> Index()
         {
-            return View(await db.Files.OrderByDescending(o => o.UploadedOn).ToListAsync());
+            return View(await db.Files.Where(x => x.SecurityCode == "AB10E95").OrderByDescending(o => o.UploadedOn).ToListAsync());
         }
 
         public ActionResult Create()
