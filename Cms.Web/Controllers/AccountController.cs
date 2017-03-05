@@ -399,6 +399,7 @@ namespace Cms.Web.Controllers
             return View();
         }
 
+        [AllowAnonymous]
         public ActionResult Version()
         {
             var ver = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
